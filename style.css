@@ -1,0 +1,215 @@
+/* CSS reset, dit niet aanpassen! */
+
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Hieronder mag je eigen CSS code */
+
+body {    
+    display: grid;
+    grid-template-columns: auto 30vw 30vw 30vw auto;
+    grid-template-rows:10vw 18vw 18vw 18vw;
+}
+
+#nav {
+    background-color:rgba(209, 99, 196, 0.627);
+    grid-row: 1/4;
+    grid-column: 2 / 4;
+}
+
+#storyleft {
+  background-image:url("img2/pattern-croissants.webp"); 
+
+    grid-row: 4/5;
+    grid-column: 2/3;
+}
+
+#storyright {
+    background-image: url("img2/dogo.gif");
+    border: pink solid 5px;
+    text-align: center;
+    grid-row: 4/5;
+    grid-column: 3/4 ;
+}
+
+
+#article1 {
+    background-color:orange;
+    grid-row:4/5;
+    grid-column: 4/5;
+}
+
+#article2{
+    background-color: rgb(218, 104, 208);
+    grid-row:2/3;
+    grid-column: 4/5;
+}
+
+#article3{
+    background-color: blue;
+    color: white;
+    background: linear-gradient(to bottom,
+     rgb(0, 21, 255),
+     rgba(223, 255, 108, 0.681));
+     font-size: 20px;
+    grid-row:3/4;
+    grid-column: 4/5;
+}
+
+#latest { 
+    background-image: url("img2/pattern-croissants.webp");
+    grid-row:1/2;
+    grid-column: 4/5;
+}
+
+#mijnDiv{
+    grid-column: 3/4;
+    grid-row: 3/4;
+    background-color: rgb(167, 212, 243);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+}
+
+#mijndiv1{ 
+    grid-column: 2/4;
+    grid-row: 1/2;
+    background-color: rgb(225, 255, 127);
+    width:150px;
+
+}
+
+#mijndiv2{ 
+    grid-column: 3/4;
+    grid-row: 1/3;
+    background-color: rgb(225, 255, 127);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+width:70px;
+}
+
+#mail{
+  grid-column: 4/5;
+  grid-row: 4/5;
+    background-color: rgb(225, 255, 127);
+    display: flex;
+    flex-direction: column;
+
+}
+
+p {
+  color: #6113a5;
+}
+
+a:hover {
+  color: rgb(255, 65, 185); 
+}
+
+body {
+  font-family: "Comic Sans MS", "Comic Sans", sans-serif;
+}
+
+#mijndiv2 {
+ font-size: 25px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  text-align: center;
+}
+
+#mijndiv3 {
+  grid-column: 2/3;
+  grid-row: 4/5;
+  background-color: rgba(225, 255, 127, 0.51);
+  font-size: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  text-align: center;
+}
+
+#mijndiv4 {
+  grid-column: 3/4;
+  grid-row: 4/5;
+  background-color: rgba(255, 127, 217, 0.51);
+  font-size: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  text-align: center;
+}
+
+#croissant {
+    grid-column: 3/4;
+    grid-row: 2/3;
+    width: 300px;
+}
+
+#croissant1 {
+     grid-column: 2/3;
+    grid-row: 2/3;
+  width: 305px;
+    border:rgb(225, 255, 127) solid 5px;
+
+}
+
+
+#croissant2 {
+    grid-column: 4/5;
+    grid-row: 2/3;
+    width: 311px;
+    border:rgb(2, 2, 255) solid 5px;
+}
+
+#croissant3 {
+    grid-column: 4/5;
+    grid-row: 3/4;
+    width: 100px;
+    border:rgb(235, 133, 220) solid 10px;
+}
+
+#croissant4 {
+    grid-column: 4/5;
+    grid-row: 3/4;
+    width: 500px;
+}
+
+#knop {
+    grid-column: 4/5;
+    grid-row: 1/2;
+    color: rgb(61, 18, 255);
+    width: 100px;
+    height: 100px;
+    background-color: rgb(193, 251, 101);
+    border-radius: 50%;
+    border: rgb(255, 0, 217) solid 5px;
+    cursor: pointer;
+}
+
+body {
+    background-image: url("img2/pawpattern.jpg"),
+                      url("img2/pattern-croissants.webp");
+   background-position: left top, right top;
+   background-repeat: repeat-y,repeat-y;
+   background-size: 50% 100%, 50% 100%;
+  }
